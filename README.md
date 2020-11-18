@@ -1,5 +1,4 @@
-## lobe_localapi
-How to use Lobe Local API
+## How to use Lobe Local API
 
 After Training...
 

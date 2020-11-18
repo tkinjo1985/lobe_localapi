@@ -4,9 +4,8 @@ from PIL import Image
 
 
 def png2base64(image):
-    image = Image.open(image)
-    image_rgb = image.convert('RGB')
+    image = Image.open(image).convert('RGB')
     buffered = BytesIO()
-    image_rgb.save(buffered, format="JPEG")
+    image.save(buffered, format="JPEG")
     img_b64 = b64encode(buffered.getvalue())
     return img_b64.decode('utf8')
